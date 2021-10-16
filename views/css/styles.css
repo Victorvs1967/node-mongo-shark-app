@@ -4,5 +4,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: #262626;
+  color: #f0f0f0;
   font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #262626;
+}
+
+.jumbotron {
+  background: #0048CD;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.jumbotron p {
+  color: #f0f0f0;
+  font-size: 1.5rem;
+}
+
+.btn-primary {
+  color: #f0f0f0;
+  color: #262626;
+  border-color: #f1f1f1;
+  margin-bottom: 5px;
+}
+
+img,
+video,
+audio {
+  margin-top: 20px;
+  max-width: 80%;
+}
+
+div.caption {
+  float: left;
+  clear: both;
 }

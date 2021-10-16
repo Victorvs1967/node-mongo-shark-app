@@ -33,20 +33,20 @@
       <div class="row">
         <div class="col-lg-4">
           <p>
-            <span class="caption">Some sharks are known to be dangerous to humans, though many more are not. The sawshark, for example, is not considered a threat to human.</span>
+            <div class="caption">Some sharks are known to be dangerous to humans, though many more are not. The sawshark, for example, is not considered a threat to human.</div>
             <img src="img/sawshark.jpg" alt="Sawshark" class="img-fluid mt-2"> </p>
         </div>
         <div class="col-lg-4">
           <p>
-            <span class="caption">Other sharks are known to be friendly and welcoming!</span>
+            <div class="caption">Other sharks are known to be friendly and welcoming!</div>
             <img src="img/sammy.png" alt="Sammy the Shark" class="img-fluid mt-2">
           </p>
         </div>
         <div class="col-lg-4">
           <form action="/sharks/addshark" method="post">
             <label class="form-label">Enter Your Shark</label>
-            <input type="text" class="form-control my-2" placeholder="Shark Name" name="name" <%=sharks[i].name; %>
-            <input type="text" class="form-control my-2" placeholder="Shark Character" name="character" <%=sharks[i].character; %>
+            <input type="text" class="form-control my-2" placeholder="Shark Name" name="name" <%= sharks[i].name; %>
+            <input type="text" class="form-control my-2" placeholder="Shark Character" name="character" <%= sharks[i].character; %>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
