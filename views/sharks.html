@@ -12,12 +12,12 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark navbar-static-top navbar-expand-md">
-      <div class="container-fluid">
+      <div class="container">
         <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse"
           aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="#" class="navbar-brand">Everything Sharks</a>
+        <a href="/" class="navbar-brand">Everything Sharks</a>
         <div class="collapse navbar-collapse" id="bs-navbar-collapse">
           <ul class="nav navbar-nav mr-auto">
             <li class="active nav-item"><a href="/" class="nav-link">Home</a></li>
@@ -29,6 +29,28 @@
     <div class="jumbotron my-4 text-center">
       <h1>Shark Info</h1>
     </div>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <p>
+            <span class="caption">Some sharks are known to be dangerous to humans, though many more are not. The sawshark, for example, is not considered a threat to human.</span>
+            <img src="img/sawshark.jpg" alt="Sawshark" class="img-fluid mt-2"> </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            <span class="caption">Other sharks are known to be friendly and welcoming!</span>
+            <img src="img/sammy.png" alt="Sammy the Shark" class="img-fluid mt-2">
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <form action="/sharks/addshark" method="post">
+            <label class="form-label">Enter Your Shark</label>
+            <input type="text" class="form-control my-2" placeholder="Shark Name" name="name" <%=sharks[i].name; %>
+            <input type="text" class="form-control my-2" placeholder="Shark Character" name="character" <%=sharks[i].character; %>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
